@@ -63,17 +63,17 @@ body {
   }
   .main {
     min-height: 0px;
-    min-width: 0px;
+    min-width: 100px;
   }
   .main__menu {
     flex-wrap: wrap;
     padding: 5px 100px;
   }
-  .main__article_p img {
+  .main__article_p_img {
     float: none;
     margin: auto;
   }
-  .main__video {
+  .main video {
     width: 100%;
   }
 }
