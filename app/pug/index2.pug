@@ -1,6 +1,21 @@
-include includes/template
-			div.article
-				p. 
-					CSS (англ. Cascading Style Sheets — каскадные таблицы стилей)
-					— формальный язык описания внешнего вида документа, написанного с
-					использованием языка разметки.
+include includes/head_template
+	body
+		.main
+			include includes/menu_template
+			div.main__gallery
+				img(src = "img/css-probely.png")
+				img(src = "img/css-text-decoration.png")
+				img(src = "img/css-text.png")
+			div.main__article
+				p.main__article_p.
+					font - универсальное свойство, которое позволяет одновременно задать несколько
+					характеристик шрифта и текста. Синтаксис font: [font-style||font-variant||
+					font-weight] font-size [/line-height] font-family | inherit
+				p.main__article_p.
+					font-style - определяет начертание шрифта: обычное, курсивное или наклонное.
+					Когда для текста установлено курсивное или наклонное начертание, браузер
+					обращается к системе для поиска подходящего шрифта. Если заданный шрифт не
+					найден, браузер использует специальный алгоритм для имитации нужного вида
+					текста. Результат и качество при этом могут получиться неудовлетворительными,
+					особенно при печати документа. Синтаксис font-style: normal | italic |
+					oblique | inherit

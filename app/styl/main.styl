@@ -9,6 +9,7 @@ body
 	text-align center
 	padding 50px
 	position absolute
+	font-family arial
 
 .main 
 	background #E3E3E3
@@ -51,19 +52,28 @@ body
 	&__video
 		margin 5px
 		padding 5px
+	&__gallery
+		display flex
+		flex-wrap wrap
+		justify-content center
+		img
+			width 300px
+			padding 5px
+			margin 5px
 
-@media (max-width: 700px)
+@media (max-width: 600px)
 	body
-		padding 0px
 		flex-direction column
 	.main
 		min-height 0px
 		min-width 100px
 		&__menu
 			flex-wrap wrap
-			padding 5px 100px
 		&__article_p_img
 			float none
 			margin auto
+		&__gallery
+			flex-direction column
+			align-items center
 		video
 			width 100%
