@@ -8,61 +8,62 @@ body
 	font-size 14px
 	text-align center
 	padding 50px
+	position absolute
 
-div.main 
+.main 
 	background #E3E3E3
 	min-height 700px
 	min-width 700px
-
-div.menu
-	display flex
-	justify-content center
-	width 100%
-	font-weight bold
-	margin 5px
-	padding 5px
-
-div.menu a
-	margin 5px 2%
-	padding 5px
-	text-decoration none
-	color black
-	&:hover
-		background-color lightgrey
-
-div.article 
-	min-height ($f1 * 1.75)
-	margin 5px
-	padding 5px
-
-p
-	margin 5px
-	padding 5px
-	text-align justify
-	text-indent 1.5em
-	line-height 2
-	word-spacing 5px
-
-p img
-	display block
-	height $f1
-	float right
-	margin 5px
-	padding 5px
-
-video
-	margin 5px
-	padding 5px
+	&__menu
+		display flex
+		justify-content center
+		width 100%
+		font-weight bold
+		margin 5px
+		padding 5px
+		&_a
+			margin 5px 2%
+			padding 5px
+			text-decoration none
+			color black
+			&:hover
+				text-decoration none
+				color black
+				background-color lightgrey
+	&__article
+		min-height ($f1 * 1.75)
+		margin 5px
+		padding 5px
+		&_p
+			margin 5px
+			padding 5px
+			text-align justify
+			text-indent 1.5em
+			line-height 2
+			word-spacing 5px
+			
+			img
+				display block
+				height $f1
+				float right
+				margin 5px
+				padding 5px
+	&__video
+		margin 5px
+		padding 5px
 
 @media (max-width: 700px)
 	body
 		padding 0px
 		flex-direction column
-	div.menu
-		flex-wrap wrap
-		padding 5px 200px
-	p img
-		float none
-		margin auto
-	video
-		width 100%
+	.main
+		min-height 0px
+		min-width 100px
+		&__menu
+			flex-wrap wrap
+			padding 5px 100px
+		&__article_p_img
+			float none
+			margin auto
+		video
+			width 100%
