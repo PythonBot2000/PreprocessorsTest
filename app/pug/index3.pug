@@ -1,7 +1,14 @@
 include includes/head_template
 	body
 		.main
-			include includes/menu_template
+			//include includes/menu_template
+			div.main__menu
+				a.main__menu_a(href = "index.html") CSS
+				a.main__menu_a(href = "#") Синтаксис CSS
+				a.main__menu_a(href = "#") Вставка CSS
+				a.main__menu_a(href = "#") CSS текст
+				a.main__menu_a(href = "index2.html") CSS шрифт
+				a.main__menu_a(href = "index3.html" id = "marked") блоки
 			.main__gallery
 				img(src = "img/css2.jpg")
 				img(src = "img/html.jpg")
@@ -24,7 +31,3 @@ include includes/head_template
 					p.
 						Строчный элемент - это элемент, который является непосредственной частью строки,
 						у него значение свойства display установлено как inline.
-				.main__centerblock__third_article 
-					p. 
-						Строчно-блочный элемент объединяет свойства блочных и строчных элементов. У него 
-						значение свойства display имеет значение inline-block. 
